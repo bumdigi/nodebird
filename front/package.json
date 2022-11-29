@@ -1,0 +1,33 @@
+{
+  "name": "react-nodebird-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "dev1": "next -p 3060"
+  },
+  "author": "bumdigi",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "antd": "^5.0.1",
+    "next": "^13.0.4",
+    "next-redux-wrapper": "^8.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-slick": "^0.29.0",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "type": "module"
+}
