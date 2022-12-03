@@ -6,7 +6,7 @@ export const initialState = {
         id: 1,
         nickname: 'bumdigi',
       },
-      content: 'hello',
+      content: 'hello #해시태그 #인스타#안녕',
       Images: [{ src: '' }, { src: '' }, { src: '' }],
       Comments: [
         {
@@ -35,8 +35,31 @@ const dummyPost = {
     id: 1,
     nickname: '범디기',
   },
-  Images: [],
-  Comments: [],
+  Images: [
+    {
+      src: 'https://picsum.photos/200/300',
+    },
+    {
+      src: 'https://picsum.photos/200/300',
+    },
+    {
+      src: 'https://picsum.photos/200/300',
+    },
+  ],
+  Comments: [
+    {
+      User: {
+        nickname: 'mingry',
+      },
+      content: '우와',
+    },
+    {
+      User: {
+        nickname: 'groom',
+      },
+      content: '냐옹',
+    },
+  ],
 };
 
 const reducer = (state = initialState, action) => {
