@@ -5,15 +5,22 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "dev1": "next -p 3060"
+    "dev1": "next -p 3060",
+    "build": "cross-env ANALYZE=true NODE_ENV=production next build"
   },
   "author": "bumdigi",
   "license": "ISC",
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
+    "@babel/eslint-parser": "^7.19.1",
+    "@next/bundle-analyzer": "^13.0.7",
     "antd": "^5.0.1",
     "axios": "^1.2.0",
-    "next": "^13.0.4",
+    "babel-plugin-styled-components": "^2.0.7",
+    "cross-env": "^7.0.3",
+    "immer": "^9.0.16",
+    "moment": "^2.29.4",
+    "next": "^13.0.6",
     "next-redux-wrapper": "^8.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -23,11 +30,17 @@
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-saga": "^1.2.1",
-    "styled-components": "^5.3.6"
+    "shortid": "^2.2.16",
+    "styled-components": "^5.3.6",
+    "swr": "^2.0.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "babel-eslint": "^10.1.0",
     "eslint": "^8.28.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0"
   }
